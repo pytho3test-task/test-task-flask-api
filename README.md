@@ -10,18 +10,13 @@
 На Ваше усмотрение остается: HTTP code при ответе.  
 
 Endpoint specification:
-  
-/add_new_list  
+- /add_new_list  
+- Input: {‘new_item’: [‘xxx’, ‘xxx’, ‘xxx’,]}  
+- Response: {‘status’: ‘ok’}, в случае ошибки: {‘status’: ‘error’}  
 
-Input: {‘new_item’: [‘xxx’, ‘xxx’, ‘xxx’,]}  
-
-Response: {‘status’: ‘ok’}, в случае ошибки: {‘status’: ‘error’}  
-
-/show_lists  
-
-Input: None  
-
-Response: {‘lists’: [‘xxx’, ‘xxx’, ‘xxx’]}  
+- /show_lists  
+- Input: None  
+- Response: {‘lists’: [‘xxx’, ‘xxx’, ‘xxx’]}  
 
 Дополнительные задания на Ваше усмотрение:  
 - Возвращение Traceback в дополнительном поле {‘errors’: ‘traceback_here’}  
